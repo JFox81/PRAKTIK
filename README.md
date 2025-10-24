@@ -6,8 +6,10 @@
 
 Сущности приложения:
 
-- пользователь: БД ( список пользователей), BFF (Сессия текущего), стор ( отображение в браузере)
-- роль пользователя: БД (список пользователей с ролью), BFF ( Сессия пользователя с ролью), стор(Использование на клиенте)
+- пользователь: БД ( список пользователей), BFF (Сессия текущего), стор ( отображение в
+  браузере)
+- роль пользователя: БД (список пользователей с ролью), BFF ( Сессия пользователя с
+  ролью), стор(Использование на клиенте)
 - статья: БД (список статей), стор (отображение в браузере)
 - Комментарий: БД (список комментариев), стор (отображение в браузере)
 
@@ -26,5 +28,6 @@
 
 - user: id / login / roleId
 - posts: массив post: id / title / imageUrl / publishedAt / commentsCount
-- post: post: id / title / imageUrl / content/ publishedAt / comments: массив comment: id / author / content / publishedAT
+- post: post: id / title / imageUrl / content/ publishedAt / comments: массив comment: id
+  / author / content / publishedAT
 - users: масив user: id / login / registredAt / role
