@@ -1,10 +1,10 @@
-import { getusers } from './get-users';
+import { getuser } from './get-user';
 import { addUser } from './add-user';
 import { createSession } from './create-session';
 
 export const server = {
 	async authorize(authLogin, authPassword) {
-		const users = await getusers();
+		const user = await getuser(authLogin);
 
 		if (!user) {
 			return {
@@ -24,8 +24,8 @@ export const server = {
 			res: createSession(user.role_id),
 		};
 	},
-	async registor(regLogin, regPassword) {
-		const users = await getUsers(regLogin);
+	async register(regLogin, regPassword) {
+		const user = await getuser(regLogin);
 
 		if (user) {
 			return {
@@ -34,7 +34,7 @@ export const server = {
 			};
 		}
 
-		(await addUser(regLogin, regPassword);
+		await addUser(regLogin, regPassword);
 
 		return {
 			error: null,
