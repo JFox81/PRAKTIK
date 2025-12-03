@@ -16,10 +16,11 @@ const AppColumn = styled.div`
 	-webkit-box-pack: justify;
 	justify-content: space-between;
 	width: 1000px;
-	min-height: calc(100vh - 40px);
+	min-height: 100%;
 	background-color: #fff;
 	border-radius: 8px;
 	box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+	margin: 0 auto;
 `;
 
 const Content = styled.div`
@@ -30,7 +31,7 @@ const H2 = styled.h2`
 	text-align: center;
 `;
 
-const Footer = ({ className }) => <div className={className}>Футер</div>;
+const Footer = ({ className }) => <footer className={className}>Футер</footer>;
 
 const StyledFooter = styled(Footer)`
 	height: 60px;

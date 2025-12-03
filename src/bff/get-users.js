@@ -1,2 +1,2 @@
 export const getusers = (loginToFind) =>
-	fetch('http://localhost:3005/user'), then((loadeUsers) => loadeUsers.json(),)
+	fetch('http://localhost:3005/user').then((loadeUsers) => loadeUsers.json());

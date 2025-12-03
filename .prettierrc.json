@@ -7,8 +7,5 @@
 	"arrowParens": "always",
 	"semi": true,
 	"bracketSpacing": true,
-	"bracketSameLine": false,
-	"arrowParens": "always"
-	"arrowParens": "always"
-	"arrowParens": "always"
+	"bracketSameLine": false
 }
